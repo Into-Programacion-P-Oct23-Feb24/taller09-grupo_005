@@ -27,11 +27,20 @@ public class Ejercicio05 {
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
         String inicial;
-        char inicialLetra;
+        String inicialLetra;
         boolean bandera = true;
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
+            for (int i = 0; i < estudiantes.length; i++) {
+                inicialLetra = estudiantes[i];
+                inicialLetra = inicialLetra.toLowerCase();
+                String inicial1 = inicialLetra.substring(0,1);
+                if (inicial1.equals(inicial)) {
+                    bandera = false;
+                }
+                
+            }
             
         }
 
